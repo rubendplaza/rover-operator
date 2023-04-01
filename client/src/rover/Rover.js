@@ -21,7 +21,7 @@ const Rover = ({ rover }) => {
     return (
         <Card>
             <Card.Content>
-                <Card.Header><Icon name='bomb' size='large' />ID: {rover.id}</Card.Header>
+                <Card.Header><Icon color='green' name='simplybuilt' size='large'/>ID: {rover.id}</Card.Header>
                 <Card.Meta>
                     Status: {rover.status}
                     <br></br>

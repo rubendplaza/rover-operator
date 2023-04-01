@@ -57,7 +57,7 @@ const RoverPanel = ({
             <Message error header="Error" content={createRoverError}></Message>
           </Form>
         </div>
-        <Divider section></Divider>
+        <Divider></Divider>
         <div className="update-rover-form">
           <Header color="blue" as="h3">
             Send Commands
@@ -88,7 +88,7 @@ const RoverPanel = ({
             <Message error header="Error" content={sendCommandsError}></Message>
           </Form>
         </div>
-        <Divider section></Divider>
+        <Divider></Divider>
         <div className="delete-rover-form">
           <Header color="blue" as="h3">
             Delete Rover
@@ -113,7 +113,7 @@ const RoverPanel = ({
             <Message error header="Error" content={deleteRoverError}></Message>
           </Form>
         </div>
-        <Divider section></Divider>
+        <Divider></Divider>
         <div className="dispatch-rover-form">
           <Header color="blue" as="h3">
             Dispatch Rover
@@ -138,7 +138,7 @@ const RoverPanel = ({
             <Message error header="Error" content={dispatchRoverError}></Message>
           </Form>
         </div>
-        <Divider section></Divider>
+        <Divider></Divider>
         <div className="view-rovers">
           <Card.Group centered className="rover-group">
             {rovers.map((rover, rover_idx) => {

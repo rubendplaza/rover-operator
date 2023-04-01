@@ -71,7 +71,7 @@ const MinePanel = ({
             <Message error header="Error" content={createMineError}></Message>
           </Form>
         </div>
-        <Divider section></Divider>
+        <Divider></Divider>
         <div className="update-mine-form">
           <Header color="blue" as="h3">
             Update Mine
@@ -113,7 +113,7 @@ const MinePanel = ({
             <Message error header="Error" content={updateMineError}></Message>
           </Form>
         </div>
-        <Divider section></Divider>
+        <Divider></Divider>
         <div className="delete-mine-form">
           <Header color="blue" as="h3">
             Delete Mine
@@ -138,7 +138,7 @@ const MinePanel = ({
             <Message error header="Error" content={deleteMineError}></Message>
           </Form>
         </div>
-        <Divider section></Divider>
+        <Divider></Divider>
         <div className="view-mines">
           <Card.Group centered className="mine-group">
             {mines.map((mine, mine_idx) => {
