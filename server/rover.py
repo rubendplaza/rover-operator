@@ -88,6 +88,12 @@ def initialize_mines(map_arr_copy, mines):
         map_arr_copy[mine.y][mine.x] = '1'
     return map_arr_copy
 
+def get_mine_at_location(mines, row, col):
+    for mine in mines:
+        if (mine.x == col and mine.y == row):
+            return mine
+    return mine[0]
+
 
 def traverse_map_with_moves(map_arr, max_rows, max_cols, moves, start_x, start_y, start_facing, mines):
     travelled_positions = []
@@ -130,7 +136,8 @@ def traverse_map_with_moves(map_arr, max_rows, max_cols, moves, start_x, start_y
         if mine_found and move == 'D':
             # print("Mine found, rover dug it. Carry on.")
             # DEFUSE
-            serial_no = mines[str(mine_count)].serial_num
+            curr_mine = get_mine_at_location(mines, row, col)
+            serial_no = curr_mine.serial_num
             print(f'Serial num: {serial_no}')
             start_defuse = time.time()
             mine_defused = brute_force_defuse_iterative(serial_no)
