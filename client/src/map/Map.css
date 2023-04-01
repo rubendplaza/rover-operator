@@ -1,0 +1,22 @@
+label {
+    color: rgb(201,209,198) !important;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-content {
+    width: 90%;
+}
+
+.map {
+    display: flex;
+    width: 100%;
+}
+
+.map-form {
+    margin-top: 1em;
+}

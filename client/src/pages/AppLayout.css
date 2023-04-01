@@ -1,0 +1,15 @@
+.panel {
+    float: left;
+    width: 35%;
+    background-color: rgb(13, 17, 23);
+    height: 100vh;
+    color: rgb(31,133,255);
+}
+
+.main {
+    float: left;
+    width: 65%;
+    background-color: rgb(33, 36, 41);
+    height: 100vh;
+    color:rgb(201,209,198);
+}

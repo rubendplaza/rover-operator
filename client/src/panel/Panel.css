@@ -1,0 +1,39 @@
+.nav {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    color: rgb(31,133,255);
+}
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    color:rgb(31,133,255);
+}
+
+.left-nav:hover, .right-nav:hover {
+    background-color: rgb(31, 37, 46);
+}
+
+.selected {
+    background-color: rgb(22,27,34);
+    border-bottom: 2px solid #F89166;
+}
+
+.panel-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
